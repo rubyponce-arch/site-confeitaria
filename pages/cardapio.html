@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="../css/cardapio.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="div-logo">
+
+            <img class="logotipo"
+                src="../img/logo.png"
+                alt="Logotipo da Confeitaria">
+
+        </div>
+
+
+        <div class="div-menu">
+
+            <h1>
+                Confeitaria Dulcius Lux
+            </h1>
+
+            <br>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="cardapio.html">Cardápio</a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <section class="meu-cardapio">
+
+        <h2>Nosso Cardápio</h2>
+
+
+        <div class="menu-cardapio-itens">
+
+
+
+            <!-- BOLO 1 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo de Chocolate Vampírico</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo3.jpg"
+                    alt="Bolo de chocolate vampírico">
+
+                <p>
+                    Um clássico irresistível da culinária e da literatura!
+                </p>
+
+               <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+
+            </div>
+
+
+            <!-- BOLO 2 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo de Morango Sanguíneo</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo1.jpg"
+                    alt="Bolo de morango sanguíneo">
+
+                <p>
+                    Bolo cheio de sentimento, doce e delicado como o coração!
+                </p>
+
+               <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+
+            </div>
+
+
+            <!-- BOLO 3 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo Rainha de Copas</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo2.jpg"
+                    alt="Bolo Rainha de Copas">
+
+                <p>
+                    Tem o sabor da realeza, cada andar ao seu desejo!
+                </p>
+
+                <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+
+            </div>
+
+            <!-- BOLO 4 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo Rainha de Copas</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo4.jpg"
+                    alt="Bolo Rainha de Copas">
+
+                <p>
+                    Tem o sabor da realeza, cada andar ao seu desejo!
+                </p>
+
+                <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+            <!-- BOLO 5 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo Lua de mel</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo5.png"
+                    alt="Bolo Lua de mel">
+
+                <p>
+                    Tem o sabor do amor, carinho e que vai te fazer desejar uma vida inteira!
+                </p>
+
+                <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+
+            </div>
+
+            <!-- BOLO 6 -->
+
+            <div class="menu-cardapio-item">
+
+                <h3>Bolo Ultima juventude</h3>
+
+                <img class="img-cardapio"
+                    src="../img/bolo6.png"
+                    alt="Bolo ultima juventude">
+
+                <p>
+                    Tem o sabor de toda a sua juventude, como se sua vida fosse eterna.
+                </p>
+
+                <div class="reservar">
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="fade" class="hide"></div>
+
+    <div id="modal" class="hide">
+        <div class=""centralizado">
+            <h2>Realizar Reserva</h2>
+            <img src="../img/pix.png" alt="QRcode para o pagamento.">
+        </div>
+
+        <div>
+            <a href="">Fechar</a>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="../js/cardapio.js"></script>
+
+</html>
