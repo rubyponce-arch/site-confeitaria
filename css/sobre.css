@@ -1,0 +1,300 @@
+
+/* ==========================================
+   DULCIUS LUX — PÁGINA SOBRE NÓS
+   Paleta: creme, vermelho e tons rosados
+   ========================================== */
+
+/* 1. CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --creme: #fdf0e1;
+    --creme-claro: #fffaf5;
+    --vermelho: #7c0906;
+    --vermelho-escuro: #520603;
+    --rosa: #efd5cf;
+    --rosa-claro: #f8e9e3;
+    --texto: #49312c;
+    --borda: #e8d2c3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--creme);
+    color: var(--texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 2. CABEÇALHO E NAVEGAÇÃO */
+
+header {
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 6%;
+    background-color: var(--creme-claro);
+    border-bottom: 1px solid var(--borda);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-logo img {
+    width: 190px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.div-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+
+.div-menu ul li a {
+    position: relative;
+    color: var(--vermelho);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.div-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--vermelho);
+    transition: width 0.3s ease;
+}
+
+.div-menu ul li a:hover {
+    color: var(--vermelho-escuro);
+}
+
+.div-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* 3. TÍTULOS E TIPOGRAFIA */
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--vermelho);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 64px);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+p {
+    color: var(--texto);
+}
+
+/* 4. INTRODUÇÃO DA PÁGINA */
+
+body > h1,
+main > h1 {
+    max-width: 1000px;
+    margin: 65px auto 35px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+/* 5. SEÇÕES SOBRE NÓS */
+
+.sobre {
+    position: relative;
+    width: min(1000px, 88%);
+    margin: 35px auto;
+    padding: 42px 48px;
+
+    background-color: var(--creme-claro);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+
+    box-shadow: 0 8px 24px rgba(82, 6, 3, 0.045);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.sobre:hover {
+    transform: translateY(-3px);
+    border-color: #d7b2a4;
+    box-shadow: 0 12px 30px rgba(82, 6, 3, 0.08);
+}
+
+.sobre h2 {
+    position: relative;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+}
+
+.sobre h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--vermelho);
+}
+
+.sobre p {
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.sobre p:last-child {
+    margin-bottom: 0;
+}
+
+/* 6. DETALHES DECORATIVOS DAS SEÇÕES */
+
+.sobre:nth-of-type(even) {
+    background-color: var(--rosa-claro);
+}
+
+.sobre:nth-of-type(even) h2::after {
+    background-color: #a54a42;
+}
+
+/* 7. RODAPÉ */
+
+footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background-color: var(--vermelho-escuro);
+    color: var(--creme);
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p {
+    color: var(--creme);
+    font-size: 12px;
+}
+
+/* 8. RESPONSIVIDADE — TABLETS */
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    .div-logo img {
+        width: 160px;
+    }
+
+    .div-menu ul {
+        gap: 20px;
+    }
+
+    .sobre {
+        width: 90%;
+        padding: 32px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+}
+
+/* 9. RESPONSIVIDADE — CELULARES */
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    .div-logo img {
+        width: 140px;
+    }
+
+    .div-menu ul {
+        gap: 12px 18px;
+    }
+
+    .div-menu ul li a {
+        font-size: 11px;
+    }
+
+    body > h1,
+    main > h1 {
+        margin-top: 40px;
+        font-size: 42px;
+    }
+
+    .sobre {
+        width: 92%;
+        margin: 22px auto;
+        padding: 25px 22px;
+    }
+
+    .sobre h2 {
+        font-size: 31px;
+    }
+
+    .sobre p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    footer {
+        margin-top: 45px;
+    }
+}

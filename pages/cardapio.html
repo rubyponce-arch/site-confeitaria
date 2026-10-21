@@ -1,226 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cardápio</title>
+    <title>Cardápio | Dulcius Lux</title>
 
     <link rel="stylesheet" href="../css/index.css">
-
     <link rel="stylesheet" href="../css/cardapio.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
-
 
 <body>
 
     <header>
-
         <div class="div-logo">
-
             <img class="logotipo"
                 src="../img/logo.png"
-                alt="Logotipo da Confeitaria">
-
+                alt="Logotipo da Confeitaria Dulcius Lux">
         </div>
-
 
         <div class="div-menu">
-
-            <h1>
-                Confeitaria Dulcius Lux
-            </h1>
-
-            <br>
+            <h1>Confeitaria Dulcius Lux</h1>
 
             <nav>
-
                 <ul>
-
-                    <li>
-                        <a href="../index.html">Início</a>
-                    </li>
-
-                    <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-
-                    <li>
-                        <a href="cardapio.html">Cardápio</a>
-                    </li>
-
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
 
+    <main>
+        <section class="meu-cardapio">
 
-    <section class="meu-cardapio">
+            <h2>Nosso Cardápio</h2>
+            <p class="introducao-cardapio">
+                Escolha seu doce favorito e deixe o resto com a gente.
+            </p>
 
-        <h2>Nosso Cardápio</h2>
+            <div class="menu-cardapio-itens">
 
+                <!-- BOLO 1 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo de Chocolate Vampírico</h3>
 
-        <div class="menu-cardapio-itens">
+                    <img class="img-cardapio"
+                        src="../img/bolo3.jpg"
+                        alt="Bolo de chocolate vampírico">
 
+                    <p>Um clássico irresistível da culinária e da literatura!</p>
 
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo de Chocolate Vampírico">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
-            <!-- BOLO 1 -->
+                <!-- BOLO 2 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo de Morango Sanguíneo</h3>
 
-            <div class="menu-cardapio-item">
+                    <img class="img-cardapio"
+                        src="../img/bolo1.jpg"
+                        alt="Bolo de morango sanguíneo">
 
-                <h3>Bolo de Chocolate Vampírico</h3>
+                    <p>Bolo cheio de sentimento, doce e delicado como o coração!</p>
 
-                <img class="img-cardapio"
-                    src="../img/bolo3.jpg"
-                    alt="Bolo de chocolate vampírico">
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo de Morango Sanguíneo">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
-                <p>
-                    Um clássico irresistível da culinária e da literatura!
-                </p>
+                <!-- BOLO 3 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo Rainha de Copas</h3>
 
-               <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
+                    <img class="img-cardapio"
+                        src="../img/bolo2.jpg"
+                        alt="Bolo Rainha de Copas">
 
+                    <p>Tem o sabor da realeza, cada andar ao seu desejo!</p>
 
-            </div>
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo Rainha de Copas">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
+                <!-- BOLO 4 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo Especial da Casa</h3>
 
-            <!-- BOLO 2 -->
+                    <img class="img-cardapio"
+                        src="../img/bolo4.jpg"
+                        alt="Bolo especial da casa">
 
-            <div class="menu-cardapio-item">
+                    <p>Uma criação especial para adoçar suas ocasiões favoritas.</p>
 
-                <h3>Bolo de Morango Sanguíneo</h3>
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo Especial da Casa">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
-                <img class="img-cardapio"
-                    src="../img/bolo1.jpg"
-                    alt="Bolo de morango sanguíneo">
+                <!-- BOLO 5 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo Lua de Mel</h3>
 
-                <p>
-                    Bolo cheio de sentimento, doce e delicado como o coração!
-                </p>
+                    <img class="img-cardapio"
+                        src="../img/bolo5.png"
+                        alt="Bolo Lua de Mel">
 
-               <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
+                    <p>Tem o sabor do amor, do carinho e de uma vida inteira!</p>
 
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo Lua de Mel">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
-            </div>
+                <!-- BOLO 6 -->
+                <article class="menu-cardapio-item">
+                    <h3>Bolo Última Juventude</h3>
 
+                    <img class="img-cardapio"
+                        src="../img/bolo6.png"
+                        alt="Bolo Última Juventude">
 
-            <!-- BOLO 3 -->
+                    <p>O sabor de toda a sua juventude, como se a vida fosse eterna.</p>
 
-            <div class="menu-cardapio-item">
-
-                <h3>Bolo Rainha de Copas</h3>
-
-                <img class="img-cardapio"
-                    src="../img/bolo2.jpg"
-                    alt="Bolo Rainha de Copas">
-
-                <p>
-                    Tem o sabor da realeza, cada andar ao seu desejo!
-                </p>
-
-                <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
-
-
-            </div>
-
-            <!-- BOLO 4 -->
-
-            <div class="menu-cardapio-item">
-
-                <h3>Bolo Rainha de Copas</h3>
-
-                <img class="img-cardapio"
-                    src="../img/bolo4.jpg"
-                    alt="Bolo Rainha de Copas">
-
-                <p>
-                    Tem o sabor da realeza, cada andar ao seu desejo!
-                </p>
-
-                <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
-
-            </div>
-
-            <!-- BOLO 5 -->
-
-            <div class="menu-cardapio-item">
-
-                <h3>Bolo Lua de mel</h3>
-
-                <img class="img-cardapio"
-                    src="../img/bolo5.png"
-                    alt="Bolo Lua de mel">
-
-                <p>
-                    Tem o sabor do amor, carinho e que vai te fazer desejar uma vida inteira!
-                </p>
-
-                <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
-
-
-            </div>
-
-            <!-- BOLO 6 -->
-
-            <div class="menu-cardapio-item">
-
-                <h3>Bolo Ultima juventude</h3>
-
-                <img class="img-cardapio"
-                    src="../img/bolo6.png"
-                    alt="Bolo ultima juventude">
-
-                <p>
-                    Tem o sabor de toda a sua juventude, como se sua vida fosse eterna.
-                </p>
-
-                <div class="reservar">
-                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
-                </div>
+                    <div class="reservar">
+                        <button type="button" class="button-reserva"
+                            data-bolo="Bolo Última Juventude">
+                            Fazer pedido <span>↗</span>
+                        </button>
+                    </div>
+                </article>
 
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
+    <!-- CAMADA ESCURA -->
     <div id="fade" class="hide"></div>
 
-    <div id="modal" class="hide">
-        <div class=""centralizado">
-            <h2>Realizar Reserva</h2>
-            <img src="../img/pix.png" alt="QRcode para o pagamento.">
-        </div>
+    <!-- JANELA DE PEDIDO -->
+    <section id="modal" class="hide"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="titulo-modal"
+        aria-describedby="descricao-modal">
 
-        <div>
-            <a href="">Fechar</a>
-        </div>
+        <button type="button" id="fechar-modal"
+            class="fechar-modal"
+            aria-label="Fechar janela">
+            &times;
+        </button>
 
-    </div>
+        <div class="conteudo-modal">
+
+            <p class="subtitulo-modal">CONFEITARIA DULCIUS LUX</p>
+
+            <h2 id="titulo-modal">Um pedido especial</h2>
+
+            <p id="descricao-modal">
+                Preencha os detalhes para solicitar seu bolo.
+            </p>
+
+            <form id="formulario-pedido">
+
+                <div class="campo-pedido">
+                    <label for="bolo-escolhido">Bolo escolhido</label>
+                    <input type="text" id="bolo-escolhido"
+                        name="bolo" readonly required>
+                </div>
+
+                <div class="campo-pedido">
+                    <label for="nome-cliente">Seu nome *</label>
+                    <input type="text" id="nome-cliente"
+                        name="nome" placeholder="Nome completo" required>
+                </div>
+
+                <div class="campo-pedido">
+                    <label for="whatsapp-cliente">Seu WhatsApp *</label>
+                    <input type="tel" id="whatsapp-cliente"
+                        name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="linha-pedido">
+                    <div class="campo-pedido">
+                        <label for="quantidade">Quantidade *</label>
+                        <input type="number" id="quantidade"
+                            name="quantidade" min="1" max="50"
+                            value="1" required>
+                    </div>
+
+                    <div class="campo-pedido">
+                        <label for="data-pedido">Data desejada *</label>
+                        <input type="date" id="data-pedido"
+                            name="data" required>
+                    </div>
+                </div>
+
+                <div class="campo-pedido">
+                    <label for="observacoes-pedido">Detalhes do pedido</label>
+                    <textarea id="observacoes-pedido"
+                        name="observacoes" rows="3"
+                        placeholder="Tamanho, recheio, decoração e outras preferências..."></textarea>
+                </div>
+
+                <button type="submit" class="confirmar-pedido">
+                    Continuar pelo WhatsApp ↗
+                </button>
+
+                <p class="aviso-pedido">
+                    Seu pedido será enviado como uma solicitação.
+                    A disponibilidade e o preço serão confirmados pela confeitaria.
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Dulcius Lux — Feito com carinho e um toque de magia.</p>
+    </footer>
+
+    <script src="../js/cardapio.js"></script>
 
 </body>
-
-<script src="../js/cardapio.js"></script>
-
 </html>

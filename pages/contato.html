@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendas | Dulcius Lux</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="../index.html" class="logo">Dulcius Lux</a>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="contato.html" class="ativo">Encomendas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <p class="subtitulo">CONFEITARIA DULCIUS LUX</p>
+            <h1>Um doce momento começa aqui.</h1>
+            <p>
+                Conte-nos como seria o bolo dos seus sonhos.
+                Preencha o formulário abaixo e solicite sua encomenda!
+            </p>
+        </section>
+
+        <section class="area-contato">
+            <div class="informacoes">
+                <p class="subtitulo">FEITO COM CARINHO</p>
+                <h2>Vamos adoçar seu dia?</h2>
+
+                <p>
+                    Cada celebração merece um toque especial.
+                    Envie os detalhes da sua encomenda para que
+                    possamos preparar algo delicioso para você.
+                </p>
+
+                <div class="detalhe">
+                    <span>01</span>
+                    <div>
+                        <h3>Escolha seu bolo</h3>
+                        <p>Selecione o sabor e o tamanho desejados.</p>
+                    </div>
+                </div>
+
+                <div class="detalhe">
+                    <span>02</span>
+                    <div>
+                        <h3>Conte sua ideia</h3>
+                        <p>Descreva a decoração e a ocasião especial.</p>
+                    </div>
+                </div>
+
+                <div class="detalhe">
+                    <span>03</span>
+                    <div>
+                        <h3>Envie sua solicitação</h3>
+                        <p>Entraremos em contato para confirmar os detalhes.</p>
+                    </div>
+                </div>
+
+                <p class="observacao">
+                    O envio do formulário é uma solicitação de encomenda.
+                    A data e o pedido dependem de confirmação.
+                </p>
+            </div>
+
+            <form id="formulario-encomenda">
+                <h2>Faça sua encomenda</h2>
+                <p class="descricao-form">
+                    Preencha seus dados para solicitar seu bolo.
+                </p>
+
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome"
+                           placeholder="Como podemos te chamar?" required>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">WhatsApp *</label>
+                        <input type="tel" id="telefone" name="telefone"
+                               placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="bolo">Tipo de bolo *</label>
+                        <select id="bolo" name="bolo" required>
+                            <option value="">Selecione</option>
+                            <option value="Bolo de aniversário">Bolo de aniversário</option>
+                            <option value="Bolo de casamento">Bolo de casamento</option>
+                            <option value="Bolo temático">Bolo temático</option>
+                            <option value="Bolo para presente">Bolo para presente</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="sabor">Sabor *</label>
+                        <select id="sabor" name="sabor" required>
+                            <option value="">Selecione</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Baunilha">Baunilha</option>
+                            <option value="Red Velvet">Red Velvet</option>
+                            <option value="Morango">Morango</option>
+                            <option value="Ninho">Ninho</option>
+                            <option value="Personalizado">Outro / personalizado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="tamanho">Tamanho *</label>
+                        <select id="tamanho" name="tamanho" required>
+                            <option value="">Selecione</option>
+                            <option value="Pequeno">Pequeno — até 6 pessoas</option>
+                            <option value="Médio">Médio — 7 a 15 pessoas</option>
+                            <option value="Grande">Grande — 16 a 30 pessoas</option>
+                            <option value="Personalizado">Outro tamanho</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="data">Data desejada *</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="ocasiao">Qual é a ocasião?</label>
+                    <input type="text" id="ocasiao" name="ocasiao"
+                           placeholder="Ex.: aniversário, casamento...">
+                </div>
+
+                <div class="campo">
+                    <label for="detalhes">Conte-nos como imagina seu bolo *</label>
+                    <textarea id="detalhes" name="detalhes" rows="5"
+                              placeholder="Decoração, cores, recheios, referências e outros detalhes..."
+                              required></textarea>
+                </div>
+
+                <button type="submit">Solicitar encomenda ↗</button>
+
+                <p class="aviso">
+                    * Campos obrigatórios. O envio não confirma automaticamente
+                    a disponibilidade ou o preço do pedido.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dulcius Lux — Feito com carinho e um toque de magia.</p>
+    </footer>
+
+    <script>
+        const dataInput = document.getElementById("data");
+
+     
+        const hoje = new Date();
+        const ano = hoje.getFullYear();
+        const mes = String(hoje.getMonth() + 1).padStart(2, "0");
+        const dia = String(hoje.getDate()).padStart(2, "0");
+
+        dataInput.min = `${ano}-${mes}-${dia}`;
+
+        document.getElementById("formulario-encomenda")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const dados = new FormData(this);
+
+                const mensagem = `
+Olá! Gostaria de solicitar uma encomenda na Dulcius Lux! 🍰
+
+*DADOS DO CLIENTE*
+Nome: ${dados.get("nome")}
+E-mail: ${dados.get("email")}
+WhatsApp: ${dados.get("telefone")}
+
+*DETALHES DO BOLO*
+Tipo: ${dados.get("bolo")}
+Sabor: ${dados.get("sabor")}
+Tamanho: ${dados.get("tamanho")}
+Data desejada: ${dados.get("data")}
+Ocasião: ${dados.get("ocasiao") || "Não informada"}
+
+*DESCRIÇÃO DA ENCOMENDA*
+${dados.get("detalhes")}
+                `.trim();
+
+            
+                const numero = "5511999999999";
+
+                const link = "https://wa.me/" + numero +
+                    "?text=" + encodeURIComponent(mensagem);
+
+                window.open(link, "_blank");
+            });
+    </script>
+</body>
+</html>
